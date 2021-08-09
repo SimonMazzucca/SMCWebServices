@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using SMCWebServices.Domain;
 
 namespace SMCWebServices.Controllers
 {
@@ -19,9 +16,9 @@ namespace SMCWebServices.Controllers
         }
 
         [HttpGet]
-        public int Get()
+        public ShoppingCart Get()
         {
-            return 42;
+            return new ShoppingCart();
         }
     }
 }
