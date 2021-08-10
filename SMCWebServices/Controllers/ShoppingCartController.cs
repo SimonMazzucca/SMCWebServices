@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using SMCWebServices.DataAccess;
 using SMCWebServices.DataAccess.Domain;
+using System.Linq;
 
 namespace SMCWebServices.Controllers
 {
@@ -10,15 +12,18 @@ namespace SMCWebServices.Controllers
     {
         private readonly ILogger<ShoppingCartController> _logger;
 
-        public ShoppingCartController(ILogger<ShoppingCartController> logger)
+        private SmcContext _context;
+
+        public ShoppingCartController(ILogger<ShoppingCartController> logger, SmcContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         [HttpGet]
         public ShoppingCart Get()
         {
-            //var test = ContextManager.Context.Orders.ToList();
+            var test = _context.Orders.ToList();
 
             return new ShoppingCart();
         }

@@ -11,21 +11,13 @@ namespace SMCWebServices.DataAccess
         {
         }
 
-        public SmcContext(DbContextOptions<SmcContext> options)
-            : base(options)
+        public SmcContext(DbContextOptions<SmcContext> options) : base(options)
         {
         }
 
         public virtual DbSet<Order> Orders { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<OrderDetail> OrderDetails { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer("Server=(localdb)\\ProjectsV13;Database=SMC;Trusted_Connection=True;");
-            }
-        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -10,7 +10,7 @@ namespace SMCWebServices.DataAccess.Domain
         public int OrderId { get; set; }
         public int UserID { get; set; }
         public string OrderNumber { get; set; }
-        public string ShipingMethod { get; set; }
+        public string ShippingMethod { get; set; }
         public DateTime OrderDate { get; set; }
         public decimal TaxesAmount { get; set; }
         public decimal ShippingAmount { get; set; }
