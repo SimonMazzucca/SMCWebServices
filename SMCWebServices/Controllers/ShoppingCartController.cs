@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using SMCWebServices.Domain;
+using SMCWebServices.DataAccess.Domain;
 
 namespace SMCWebServices.Controllers
 {
@@ -18,6 +18,8 @@ namespace SMCWebServices.Controllers
         [HttpGet]
         public ShoppingCart Get()
         {
+            //var test = ContextManager.Context.Orders.ToList();
+
             return new ShoppingCart();
         }
     }

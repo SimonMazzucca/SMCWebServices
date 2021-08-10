@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SMCWebServices.Domain
+namespace SMCWebServices.DataAccess.Domain
 {
     public class ShoppingCart
     {
