@@ -7,5 +7,8 @@ CREATE TABLE dbo.ProductCategories(
 GO
 
 
-INSERT INTO [dbo].[ProductCategories] VALUES (1, 'Bass Huitars');
+INSERT INTO [dbo].[ProductCategories] VALUES (1, 'Bass Guitars');
 INSERT INTO [dbo].[ProductCategories] VALUES (2, 'Accessories');
+
+
+SELECT * FROM ProductCategories

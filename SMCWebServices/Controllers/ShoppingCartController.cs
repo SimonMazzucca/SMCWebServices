@@ -6,6 +6,12 @@ using System.Linq;
 
 namespace SMCWebServices.Controllers
 {
+
+    public class ShoppingCartCriteria
+    {
+        public int OrderId { get; set; }
+    }
+
     [ApiController]
     [Route("[controller]")]
     public class ShoppingCartController : ControllerBase
@@ -21,11 +27,12 @@ namespace SMCWebServices.Controllers
         }
 
         [HttpGet]
-        public ShoppingCart Get()
+        public ShoppingCart Get(ShoppingCartCriteria scc)
         {
-            var test = _context.Orders.ToList();
+            var details = _context.OrderDetails.ToList();
+            var order = _context.Orders.Where(o => o.OrderId == scc.OrderId).FirstOrDefault();
 
-            return new ShoppingCart();
+            return new ShoppingCart(order);
         }
     }
 }

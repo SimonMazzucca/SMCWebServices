@@ -15,6 +15,7 @@ namespace SMCWebServices.DataAccess.Domain
         [ForeignKey("ProductId")]
         public Product Product { get; set; }
 
+        public int Quantity { get; set; }
     }
 
 }

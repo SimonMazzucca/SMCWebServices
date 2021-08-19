@@ -39,11 +39,11 @@ namespace SMCWebServices.DataAccess
 
                 entity
                     .HasOne(od => od.Product)
-                    .WithMany(p => p.Orders);
+                    .WithMany(p => p.OrderDetails);
 
                 entity
                     .HasOne(od => od.Order)
-                    .WithMany(o => o.Orders);
+                    .WithMany(o => o.OrderDetails);
             });
 
             OnModelCreatingPartial(modelBuilder);

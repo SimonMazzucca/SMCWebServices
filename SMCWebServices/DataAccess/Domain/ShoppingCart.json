@@ -1,0 +1,41 @@
+{
+    "orderId": "6554321",
+    "orderDate": "2021-07-19T11:50:32.000Z",
+    "shippingDate": "2021-07-19T15:45:33.000Z",
+    "expectedDeliveryDate": "2021-07-21T00:00:00.000Z",
+    "actualDeliveryDate": "",
+    "customerId": "999456",
+    "products": [{
+            "productId": "1009",
+            "productName": "Fender Deluxe Precision Bass  White Pearl",
+            "price": "1,299.99",
+            "url": "https://www.simonmusiccenter.com/products/1009",
+            "quantity": "1"
+        }, {
+            "productId": "1150",
+            "productName": "Fender FB620 Electric Bass Gig Bag",
+            "price": "59.99",
+            "url": "https://www.simonmusiccenter.com/products/1150",
+            "quantity": "1"
+        }, {
+            "productId": "1850",
+            "productName": "D'Addario EXL170BT Electric Bass String Set",
+            "price": "36.63",
+            "url": "https://www.simonmusiccenter.com/products/1850",
+            "quantity": "2"
+        }, {
+            "productId": "1666",
+            "productName": "Bass Guitar Pick (Variety Pack)",
+            "price": "4.99",
+            "url": "https://www.simonmusiccenter.com/products/1666",
+            "quantity": "4"
+        }
+    ],
+    "amountDetails": {
+        "subtotal": "1,453.20",
+        "taxes": "123.52",
+        "shipping": "30.00",
+        "shippingMethod": "2-Day Rush Delivery",
+        "total": "1606.72"
+    }
+}
